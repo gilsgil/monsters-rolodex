@@ -1,13 +1,20 @@
 import React from "react";
-import './search-box.css'
+import "./search-box.css";
+import {TextField, Container } from "@material-ui/core";
 
-export const SearchBox = ({placeholder, handleChange}) => {
-    return (
-        <input
-            type="search"
-            className={'search'}
-            placeholder={placeholder}
-            onChange={handleChange}
-        />
-    )
+function SearchBox({ placeholder, handleChange }) {
+  return (
+    <Container maxWidth="sm" id="search-container">
+      <TextField
+        variant="outlined"
+        id="search-field"
+        fullWidth
+        type="search"
+        placeholder={placeholder}
+        onChange={handleChange}
+      />
+    </Container>
+  );
 }
+
+export default SearchBox;

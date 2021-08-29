@@ -1,7 +1,5 @@
-.card{
-    display: flex;
-    flex-direction: column;
-    background-color: purple;
+#card{
+
     border-radius: 5px;
     padding: 25px;
     cursor: pointer;
@@ -11,6 +9,6 @@
     transition: transform 0.25s ease-out;
 }
 
-.card:hover{
+#card:hover{
     transform: scale(1.05);
 }
